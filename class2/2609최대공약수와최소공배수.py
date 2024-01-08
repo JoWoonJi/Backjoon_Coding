@@ -1,23 +1,49 @@
 a, b = map(int,input().split())
-gcd_list = []
-for i in range(1, min(a,b) + 1): 
-    if a % i == 0 and b % i == 0:
-        gcd_list.append(i)
-# 리스트 컴프리헨션 :gcd_list = [i for i in range(1, min(a, b) + 1) if a % i == 0 and b % i == 0]
+cd = [i for i in range(1, min(a, b)+1) if a % i == 0 and b % i == 0]
+print(max(cd))
+a_multi = {a * i for i in range(1, b+1)}
+b_multi = {b * i for i in range(1, a+1)}
+
+cm = a_multi.intersection(b_multi)
+print(min(cm))
+
+
+# a, b = map(int,input().split())
+# cd = []
+# for i in range(1, min(a,b)+1):
+#     if a % i == 0 and b % i == 0 :
+#         cd.append(i)
+# print(max(cd))
+
+# a_multi = {a * i for i in range(1, b+1)}
+# b_multi = {b * i for i in range(1, a+1)}
+
+# cm = a_multi.intersection(b_multi)
+# print(min(cm))
+
+# //
+
+# a, b = map(int,input().split())
+# gcd_list = []
+# for i in range(1, min(a,b) + 1): 
+#     if a % i == 0 and b % i == 0:
+#         gcd_list.append(i)
+# # 리스트 컴프리헨션 :gcd_list = [i for i in range(1, min(a, b) + 1) if a % i == 0 and b % i == 0]
         
-print(max(gcd_list))
+# print(max(gcd_list))
 
-a_multi = {a * i for i in range(1, b+1)} #리스트 [] 아님 딕셔너리{'a': 1, 'b': 2} 아님 / set {1, 2, 3} 임
-b_multi = {b * j for j in range(1, a+1)}
+# a_multi = {a * i for i in range(1, b+1)} #리스트 [] 아님 딕셔너리{'a': 1, 'b': 2} 아님 / set {1, 2, 3} 임
+# b_multi = {b * j for j in range(1, a+1)}
 
-common_elements = a_multi.intersection(b_multi)  #교집합 익히기
+# common_elements = a_multi.intersection(b_multi)  #교집합 익히기
 
-if common_elements:
-    lcm = min(common_elements)
-    print(lcm)
-else:
-    print(a*b)
+# if common_elements:
+#     lcm = min(common_elements)
+#     print(lcm)
+# else:
+#     print(a*b)
 
+# //
 
 
 #리스트 컴프리헨션 사용 
