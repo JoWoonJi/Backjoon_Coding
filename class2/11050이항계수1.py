@@ -1,10 +1,14 @@
-from math import factorial # 이런 간단한 방법이! 수학적인거는 이미 모듈로 구현이 되어있다.
-
-def binomial_coefficient(n, k):
-    return factorial(n) // (factorial(k) * factorial(n - k))
-
+import math 
 n, k = map(int, input().split())
-print(binomial_coefficient(n, k))
+print(math.comb(n,k))
+
+# from math import factorial # 이런 간단한 방법이! 수학적인거는 이미 모듈로 구현이 되어있다.
+
+# def binomial_coefficient(n, k):
+#     return factorial(n) // (factorial(k) * factorial(n - k))
+
+# n, k = map(int, input().split())
+# print(binomial_coefficient(n, k))
 
 # 팩토리얼을 구현하고 이항계수 공식 적용.
 # def binomial_coefficient(n, k):
