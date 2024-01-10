@@ -2,6 +2,10 @@ import math
 n, k = map(int, input().split())
 print(math.comb(n,k))
 
+#처음으로 숏코딩에 근접 / 파이썬에서 *연산자는 곱과 argument unpacking(인자 풀기)에 사용
+#import math
+#print(math.comb(*map(int,input().split())))
+
 # from math import factorial # 이런 간단한 방법이! 수학적인거는 이미 모듈로 구현이 되어있다.
 
 # def binomial_coefficient(n, k):
