@@ -13,6 +13,24 @@ print(' '.join(map(str,ranks)))
 
 # //
 
+#함수로 깰끔하게 연습
+# def bulk(n):
+#     bulks = []
+#     for _ in range(n):
+#         x, y = map(int,input().split())
+#         bulks.append((x, y))
+#     ranks = [1] * n
+#     for i in range(n):
+#         for j in range(n):
+#             if bulks[i][0] < bulks[j][0] and bulks[i][1] < bulks[j][1]:
+#                 ranks[i] += 1
+#     return ' '.join(map(str,ranks))
+    
+# n = int(input())
+# print(bulk(n))
+
+# //
+
 # sorted사용해서. 더 쉬워질줄 알았는데 복잡.
 # def bulk_rank_sorted():
 #     n = int(input())
