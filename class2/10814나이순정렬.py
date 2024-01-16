@@ -89,3 +89,15 @@ for i in sort_m(m_data):
 
 # for member in sorted_members:
 #     print(member[0], member[1])
+
+# //
+
+#첫 시도를 간결하게. 코드는 간단하지만 오래걸려서 문제에 부합하지 않는듯
+# n = int(input())
+# m_data = []
+# for _ in range(n):
+#     age, name = input().split()
+#     m_data.append((int(age), name))
+# m_data.sort(key=lambda x: x[0])
+# for i in m_data:
+#     print(i[0], i[1])
