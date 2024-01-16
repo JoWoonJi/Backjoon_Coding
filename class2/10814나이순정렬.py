@@ -13,6 +13,22 @@ def sort_m(m_data):
 for i in sort_m(m_data):
     print(i[0], i[1])
 
+#//
+
+#함수 없애고 stdout으로 해보기.
+# import sys
+
+# n = int(sys.stdin.readline().strip())
+# m_data = [sys.stdin.readline().strip().split() for _ in range(n)]
+# m_data = [(int(age), name) for age, name in m_data]
+
+# age_list = [[] for _ in range(201)]
+# for age, name in m_data:
+#     age_list[age].append(name)
+# sort = [(age, name) for age in range(201) for name in age_list[age]]
+# for i in sort:
+#     sys.stdout.write(f"{i[0]} {i[1]}\n")
+
 # //
 
 #리스트 컴프리헨션 사용하지 않고.
