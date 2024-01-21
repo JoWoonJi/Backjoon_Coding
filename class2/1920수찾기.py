@@ -16,6 +16,29 @@ for i in search:
     else:
         print(0)
 
+# //
+
+#bisect_right로 할때. bisect right는 다음 값을 반환하기때문에 index-1해줘야 한다.
+# from bisect import bisect_right
+# import sys
+
+# n = int(input())
+# a = list(map(int, sys.stdin.readline().split()))
+# m = int(input())
+# f = list(map(int, sys.stdin.readline().split()))
+
+# a.sort()
+
+# for i in f:
+#     index = bisect_right(a, i)
+#     if index > 0 and a[index-1] == i:
+#         print(1)
+#     else:
+#         print(0)
+
+# //
+        
+
 # # 함수 정의
 # from bisect import bisect_left, bisect_right # bisect는 이진탐색 알고리즘, 정렬된 배열에서 특정원소 위치 찾을때 활용
 
