@@ -12,6 +12,17 @@ def m(n):
 n=int(input())
 print(m(n))
 
+#pypy3로하면 됨
+# n=int(input())
+# d=[0]*(n+1)
+# for i in range(1,n+1):
+#     d[i]=i 
+#     j=1
+#     while j**2<=i:
+#         d[i]=min(d[i],d[i-j**2]+1)
+#         j+=1
+# print(d[n])
+
 # #시간초과
 # n = int(input())
 
