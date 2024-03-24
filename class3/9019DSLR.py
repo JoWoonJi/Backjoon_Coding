@@ -39,3 +39,51 @@ def bfs(a, b):
 for _ in range(int(input())):
     N, K = map(int, input().split())
     bfs(N, K)
+
+# import sys
+# from collections import deque
+
+# cmd = {0:'D', 1:'S', 2:'L', 3:'R'}
+
+# def D(n):
+#     return (n * 2) % 10000
+
+# def S(n):
+#     if n == 0: return 9999
+#     return n - 1
+
+# def L(n):
+#     return (n % 1000) * 10 + n // 1000
+
+# def R(n):
+#     return (n % 10) * 1000 + n // 10
+
+# def solve():
+#     a, b = map(int, sys.stdin.readline().rstrip().split())
+#     visited = [False for _ in range(10000)]
+#     q = deque()
+#     q.append([a, ''])
+#     visited[a] = True
+
+#     while q:
+#         cn, path = q.popleft()
+
+#         if cn == b:
+#             print(path)
+#             break
+
+#         nns = [D(cn), S(cn), L(cn), R(cn)]
+
+#         for i in range(4):
+#             nn = nns[i]
+
+#             if not visited[nn]:
+#                 visited[nn] = True
+#                 q.append([nn, path+cmd[i]])
+
+
+# tc = int(sys.stdin.readline().rstrip())
+
+# while tc:
+#     solve()
+#     tc -= 1
