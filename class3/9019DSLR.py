@@ -1,4 +1,4 @@
-#복습
+#복습 pypy3
 import sys
 from collections import deque
 
@@ -40,6 +40,38 @@ for _ in range(int(input())):
     N, K = map(int, input().split())
     bfs(N, K)
 
+#python3
+# connection = [[(2*i)%10000, (i-1)%10000, (i%1000)*10 + i//1000, (i%10)*1000 + i//10] for i in range(10000)]
+# def solve(A, B, connection):
+#     visited = {A:''}
+#     que = [A]
+#     for depth in range(1, 10000):
+#         new_que = []
+#         for num in que:
+#             D, S, L, R = connection[num]
+#             if D not in visited:
+#                 new_que.append(D)
+#                 visited[D] = visited[num] + 'D'
+#             if S not in visited:
+#                 new_que.append(S)
+#                 visited[S] = visited[num] + 'S'
+#             if L not in visited:
+#                 new_que.append(L)
+#                 visited[L] = visited[num] + 'L'
+#             if R not in visited:
+#                 new_que.append(R)
+#                 visited[R] = visited[num] + 'R'
+#             if B in visited:
+#                 return visited[B]
+
+#         que = [num for num in new_que]
+
+# T = int(input())
+# for _ in range(T):
+#     A, B = map(int, input().split())
+#     print(solve(A, B, connection))    
+
+#pypy3
 # import sys
 # from collections import deque
 
